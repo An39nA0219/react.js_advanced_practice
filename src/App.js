@@ -2,6 +2,7 @@ import React, { useCallback, useState } from "react";
 import { ChildArea } from "./components/ChildArea";
 import { CssModules } from "./components/CssModules";
 import { InlineStyle } from "./components/InlineStyle";
+import { StyledJsx } from "./components/StyledJsx";
 import "./styles.css";
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
       <ChildArea open={open} onclickClose={onclickClose} />
       <InlineStyle />
       <CssModules />
+      <StyledJsx />
     </div>
   );
 }
