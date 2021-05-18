@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from "react";
-import { ChildArea } from "./ChildArea";
+import { ChildArea } from "./components/ChildArea";
+import { InlineStyle } from "./components/InlineStyle";
 import "./styles.css";
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
       <br />
       <br />
       <ChildArea open={open} onclickClose={onclickClose} />
+      <InlineStyle />
     </div>
   );
 }
